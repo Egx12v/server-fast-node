@@ -11,7 +11,7 @@ class Server {
     //! Creamos el constructor con una instacia de app expres
     constructor() {
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
 
 
         //&Tambien es bueno poner las rutas definidas aquí para quien llegue al server pueda ver que rutas están disponibles
